@@ -35,7 +35,6 @@ internal class Program
             // (مفيد لو عملت migrations مسبقًا عبر Add-Migration)
             try
             {
-                // سيفعل أي migrations موجودة. إذا لم تطبق migrations من قبل، قد تحتاج أولاً لتوليدها عبر Add-Migration.
                 context.Database.Migrate();
                 Console.WriteLine("Database migrated/ensured.");
             }
